@@ -45,6 +45,7 @@ public class Bex {
  
 		// get an hmac_sha1 Mac instance and initialize with the signing key
 		Mac mac = Mac.getInstance(HMAC_SHA1_ALGORITHM);
+		
 		mac.init(signingKey);
  
 		// compute the hmac on input data bytes
