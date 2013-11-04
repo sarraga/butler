@@ -1,0 +1,12 @@
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-10-28 16:01:11
+project --topLevelPackage net.santablanca.butler --projectName butler --java 6 --packaging JAR
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-10-28 16:01:21
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log opened at 2013-10-28 16:11:09
+persistence setup --provider HIBERNATE --database MYSQL --hostName nagios.santablanca.net --databaseName butler --userName butler --password luv2run
+entity jpa --class net.santablanca.butler.model.trade --activeRecord 
+entity jpa --class net.santablanca.butler.model.bex 
+field string --fieldName apiAccessKey --notNull 
+field string --fieldName apiSecretKey --notNull 
+logging setup --level DEBUG --package PROJECT 
+exit
+// Spring Roo 1.2.3.RELEASE [rev 7fd62b6] log closed at 2013-10-29 11:07:31
